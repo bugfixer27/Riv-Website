@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Quad Review — Riverdale Country School Journal of Science</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="paper-texture"></div>
+<div class="ambient-field" aria-hidden="true"></div>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="masthead-top">
+    <div class="masthead-meta left">
+      <span class="meta-label">Vol. XVII</span>
+      <span class="meta-divider">·</span>
+      <span>No. 2</span>
+    </div>
+    <div class="masthead-meta center">
+      <span>Spring Issue, Anno MMXXVI</span>
+    </div>
+    <div class="masthead-meta right">
+      <span>Riverdale, New York</span>
+    </div>
+  </div>
+
+  <!-- Riverdale Country School falcon crest -->
+  <div class="masthead-crest" aria-label="Riverdale Country School falcon crest">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Shield -->
+      <path d="M 50 6 L 90 16 L 90 50 Q 90 82 50 96 Q 10 82 10 50 L 10 16 Z"
+            fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <!-- Inner shield line -->
+      <path d="M 50 13 L 84 21 L 84 50 Q 84 78 50 90 Q 16 78 16 50 L 16 21 Z"
+            fill="none" stroke="currentColor" stroke-width="0.7" opacity="0.45"/>
+      <!-- Falcon silhouette -->
+      <g transform="translate(50 54)">
+        <!-- Body -->
+        <path d="M 0 -16 C -4 -16 -7 -12 -7 -7 L -7 2 C -7 6 -5 9 -1 11 L 4 13 C 7 13 9 11 9 8 L 9 -4 C 9 -10 5 -16 0 -16 Z"
+              fill="currentColor"/>
+        <!-- Head + beak -->
+        <circle cx="0" cy="-18" r="5" fill="currentColor"/>
+        <path d="M 4 -19 L 9 -20 L 5 -16 Z" fill="currentColor"/>
+        <!-- Eye notch -->
+        <circle cx="1.5" cy="-19" r="0.9" fill="#f5f1e8"/>
+        <!-- Left wing (spread) -->
+        <path d="M -6 -8 C -14 -14 -22 -12 -26 -6 C -22 -7 -17 -6 -13 -3 C -18 -5 -23 -3 -26 2 C -21 1 -16 2 -12 5 C -16 4 -20 7 -21 12 C -15 9 -9 8 -6 5 Z"
+              fill="currentColor"/>
+        <!-- Right wing (spread) -->
+        <path d="M 6 -8 C 14 -14 22 -12 26 -6 C 22 -7 17 -6 13 -3 C 18 -5 23 -3 26 2 C 21 1 16 2 12 5 C 16 4 20 7 21 12 C 15 9 9 8 6 5 Z"
+              fill="currentColor"/>
+        <!-- Tail feathers -->
+        <path d="M -3 12 L 0 20 L 3 12 Z" fill="currentColor"/>
+      </g>
+      <!-- Banner with initials -->
+      <text x="50" y="82" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-weight="700" font-size="9" fill="currentColor" letter-spacing="2">RCS</text>
+    </svg>
+  </div>
+
+  <div class="masthead-title">
+    <div class="ornament-wing left">
+      <svg viewBox="0 0 120 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="0" y1="11" x2="86" y2="11" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="0" y1="15" x2="82" y2="15" stroke="currentColor" stroke-width="0.6"/>
+        <circle cx="92" cy="11" r="2" fill="currentColor"/>
+        <path d="M 98 11 L 108 7 L 115 11 L 108 15 Z" fill="currentColor"/>
+      </svg>
+    </div>
+    <h1 class="journal-title">The Quad Review</h1>
+    <div class="ornament-wing right">
+      <svg viewBox="0 0 120 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 22 11 L 12 7 L 5 11 L 12 15 Z" fill="currentColor"/>
+        <circle cx="28" cy="11" r="2" fill="currentColor"/>
+        <line x1="34" y1="11" x2="120" y2="11" stroke="currentColor" stroke-width="0.6"/>
+        <line x1="38" y1="15" x2="120" y2="15" stroke="currentColor" stroke-width="0.6"/>
+      </svg>
+    </div>
+  </div>
+
+  <p class="journal-subtitle"><em>A Student Journal of the Natural &amp; Physical Sciences</em></p>
+  <p class="journal-tagline">Published by the pupils of Riverdale Country School — Est. 1907</p>
+
+  <nav class="masthead-nav">
+    <a href="#featured">Featured</a>
+    <a href="#contributors">Contributors</a>
+    <a href="#mentors">Mentors</a>
+    <a href="#masthead-info">Masthead</a>
+  </nav>
+</header>
+
+<!-- ============ EDITOR'S NOTE ============ -->
+<section class="editors-note">
+  <div class="drop-cap-container">
+    <p><span class="drop-cap">I</span>n this, our second issue of the academic year, <em>The Quad Review</em> gathers student scientific writing drawn from laboratory notebooks, field observation, and independent research. We have asked our contributors — all current juniors and seniors — to translate their work into prose intelligible to any curious reader. The result, we believe, speaks for itself.</p>
+    <p>Science, at its best, is a communal act of paying attention. What follows is attention — careful, patient, occasionally humorous — directed at the quiet workings of the natural world.</p>
+    <p class="signoff">— The Editors</p>
+  </div>
+</section>
+
+<!-- ============ FEATURED ARTICLE ============ -->
+<section id="featured" class="section-block">
+  <div class="section-header">
+    <span class="section-numeral">I.</span>
+    <h2 class="section-title">Lead Feature</h2>
+    <div class="section-rule"></div>
+  </div>
+
+  <article class="feature-article">
+    <div class="feature-meta">
+      <span class="article-category">Earth &amp; Climate</span>
+      <span class="article-dot">·</span>
+      <span>Press Release</span>
+      <span class="article-dot">·</span>
+      <span>Volume XVII, Issue 2</span>
+    </div>
+    <h3 class="feature-title">Super Plants: How Grass Can Help Mitigate the Effects of Climate Change</h3>
+    <p class="feature-deck">A close look at marram grass, shifting sand, and the surprisingly architectural choices that decide whether a dune survives the next storm — or disappears into the sea.</p>
+    <div class="feature-byline">
+      <span>By <a href="bio-florian.html"><strong>Florian</strong></a>, Class of 2027</span>
+    </div>
+    <a href="super-plants.html" class="read-article-btn">Read the feature <span>→</span></a>
+  </article>
+</section>
+
+<!-- ============ CONTRIBUTORS ============ -->
+<section id="contributors" class="section-block">
+  <div class="section-header">
+    <span class="section-numeral">II.</span>
+    <h2 class="section-title">Contributors</h2>
+    <div class="section-rule"></div>
+  </div>
+
+  <p class="contributors-intro">The pupils of Riverdale Country School whose writing, editing, and research make this journal possible. Select a name to read more.</p>
+
+  <div class="contributor-grid">
+    <a class="contributor-card" href="bio-austin.html">
+      <span class="contributor-initials">A</span>
+      <span class="contributor-name">Austin</span>
+      <span class="contributor-class">Class of 2027</span>
+    </a>
+    <a class="contributor-card" href="bio-brielle.html">
+      <span class="contributor-initials">B</span>
+      <span class="contributor-name">Brielle</span>
+      <span class="contributor-class">Class of 2028</span>
+    </a>
+    <a class="contributor-card" href="bio-brayden.html">
+      <span class="contributor-initials">B</span>
+      <span class="contributor-name">Brayden</span>
+      <span class="contributor-class">Class of 2028</span>
+    </a>
+    <a class="contributor-card" href="bio-cole.html">
+      <span class="contributor-initials">C</span>
+      <span class="contributor-name">Cole</span>
+      <span class="contributor-class">Class of 2028</span>
+    </a>
+    <a class="contributor-card" href="bio-ella.html">
+      <span class="contributor-initials">E</span>
+      <span class="contributor-name">Ella</span>
+      <span class="contributor-class">Class of 2027</span>
+    </a>
+    <a class="contributor-card" href="bio-florian.html">
+      <span class="contributor-initials">F</span>
+      <span class="contributor-name">Florian</span>
+      <span class="contributor-class">Class of 2027</span>
+    </a>
+    <a class="contributor-card" href="bio-luke.html">
+      <span class="contributor-initials">L</span>
+      <span class="contributor-name">Luke</span>
+      <span class="contributor-class">Class of 2027</span>
+    </a>
+    <a class="contributor-card" href="bio-lucas.html">
+      <span class="contributor-initials">L</span>
+      <span class="contributor-name">Lucas</span>
+      <span class="contributor-class">Class of 2028</span>
+    </a>
+    <a class="contributor-card" href="bio-william.html">
+      <span class="contributor-initials">W</span>
+      <span class="contributor-name">William</span>
+      <span class="contributor-class">Class of 2028</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ MENTORS ============ -->
+<section id="mentors" class="section-block mentors-section">
+  <div class="section-header">
+    <span class="section-numeral">III.</span>
+    <h2 class="section-title">Journal Mentors</h2>
+    <div class="section-rule"></div>
+  </div>
+
+  <div class="mentor-ledger">
+    <article class="mentor-card">
+      <span class="mentor-kicker">Faculty Mentor</span>
+      <h3>Dr Gentile</h3>
+      <p>Guides the journal's scientific standards, revision process, and sense of careful inquiry.</p>
+    </article>
+    <article class="mentor-card">
+      <span class="mentor-kicker">Faculty Mentor</span>
+      <h3>Teacher Beckwith</h3>
+      <p>Supports student editors as they shape research into clear, vivid, and responsible science writing.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ MASTHEAD INFO ============ -->
+<footer id="masthead-info" class="footer">
+  <div class="footer-rule"></div>
+  <div class="footer-grid">
+    <div>
+      <h4 class="footer-head">The Quad Review</h4>
+      <p>Riverdale Country School<br>5250 Fieldston Road<br>Bronx, New York 10471</p>
+      <p class="footer-note">Published by the Science Writing Collective, open to submissions from all Upper School students.</p>
+    </div>
+    <div>
+      <h4 class="footer-head">Issue</h4>
+      <p>Volume XVII, No. 2<br>Spring 2026</p>
+      <p>One feature article, with further pieces to follow in subsequent issues.</p>
+    </div>
+    <div>
+      <h4 class="footer-head">Mentors</h4>
+      <p>Dr Gentile<br>Teacher Beckwith</p>
+      <p>Faculty mentors for <em>The Quad Review</em>.</p>
+    </div>
+    <div>
+      <h4 class="footer-head">Contribute</h4>
+      <p>Pupils interested in contributing are invited to speak with the editors or review the submission guidelines posted outside the Science Department office.</p>
+    </div>
+  </div>
+  <p class="colophon">
+    <span class="falcon-mark">◆</span>
+    The Quad Review is set in Fraunces and EB Garamond. &copy; MMXXVI, Riverdale Country School.
+    <span class="falcon-mark">◆</span>
+  </p>
+</footer>
+
+<script src="interactions.js" defer></script>
+</body>
+</html>
