@@ -15,7 +15,7 @@
   window.addEventListener('pointermove', setPointer, { passive: true });
 
   const tiltTargets = document.querySelectorAll(
-    '.feature-article, .contributor-card, .mentor-card, .article-figure, .bio-placeholder'
+    '.feature-article, .article-card, .contributor-card, .mentor-card, .article-figure, .bio-placeholder'
   );
 
   tiltTargets.forEach((target) => {
@@ -46,6 +46,7 @@
     '.editors-note',
     '.section-block',
     '.feature-article',
+    '.article-card',
     '.contributor-card',
     '.mentor-card',
     '.footer-grid > div',

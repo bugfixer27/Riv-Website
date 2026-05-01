@@ -490,9 +490,9 @@ header, section, footer, main { position: relative; z-index: 2; }
 
 .read-article-btn:focus-visible,
 .masthead-nav a:focus-visible,
-.contributor-card:focus-visible,
 .article-back:focus-visible,
-.bio-nav a:focus-visible {
+.bio-nav a:focus-visible,
+.card-title a:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 5px;
 }
@@ -990,6 +990,11 @@ header, section, footer, main { position: relative; z-index: 2; }
 
 .article-body em { color: var(--ink-soft); }
 
+.article-body sup {
+  font-size: 0.7em;
+  line-height: 0;
+}
+
 .article-body blockquote {
   border-left: 3px solid var(--accent);
   padding: 8px 0 8px 28px;
@@ -1076,6 +1081,46 @@ header, section, footer, main { position: relative; z-index: 2; }
   display: block;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 680px;
+  margin: 0 auto;
+  border: 1px solid rgba(46, 51, 64, 0.22);
+}
+
+.article-figure.narrow img {
+  max-width: 360px;
+}
+
+.article-figure.wide {
+  margin-left: -80px;
+  margin-right: -80px;
+}
+
+.article-figure.wide img {
+  max-width: 900px;
+}
+
+.works-cited {
+  margin-top: 3em;
+  padding-top: 1.8em;
+  border-top: 3px double var(--ink);
+}
+
+.works-cited h2 {
+  margin-top: 0;
+}
+
+.works-cited p {
+  font-size: 16px;
+  line-height: 1.45;
+  text-align: left;
+  overflow-wrap: anywhere;
+  color: var(--ink-soft);
 }
 
 .article-footer {
@@ -1337,7 +1382,8 @@ header, section, footer, main { position: relative; z-index: 2; }
   .masthead-nav a { font-size: 12px; }
   .editors-note, .section-block { padding: 30px 22px; }
   .feature-article { padding: 32px 22px; }
-  .article-figure { margin: 2em 0; padding: 20px; }
+  .article-figure,
+  .article-figure.wide { margin: 2em 0; padding: 20px; }
   .article-page, .bio-page { padding: 40px 22px 60px; }
   .article-body p:first-of-type::first-letter {
     font-size: 56px;
