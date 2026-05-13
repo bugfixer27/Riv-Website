@@ -13,10 +13,11 @@ Static GitHub Pages site for Science Research and Informatics press releases.
 - `better-shot-mrna-vaccine.html` - Ella's mRNA vaccine lipid nanoparticle press release
 - `translator-torment-python-energy.html` - Cole's Python interpreter energy press release
 - `less-flight-less-injury.html` - Lucas's grounded running injury-risk press release
+- `air-fryer-chicken-nuggets.html` - Brayden's air-fried chicken nugget press release
 
 ## Assets
 
-Figure images live in `assets/images/` and are referenced with relative paths so they work on GitHub Pages. The original PDFs are intentionally not included because their headers contain student full names. The website uses first names and class years only.
+Figure images live in `assets/images/` and are referenced with relative paths so they work on GitHub Pages. The website uses first names and class years only.
 
 ## GitHub Pages
 
