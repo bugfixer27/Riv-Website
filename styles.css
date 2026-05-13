@@ -1,5 +1,5 @@
 /* ============================================================
-   THE QUAD REVIEW — Riverdale Country School Science Journal
+   THE ZYGOTE — Riverdale Country School Science Journal
    A stylesheet in the manner of traditional academic journals
    Colors drawn from Riverdale Country School: maroon & navy
    ============================================================ */
@@ -30,7 +30,7 @@
   /* Type */
   --serif-display: 'Fraunces', 'Playfair Display', Georgia, serif;
   --serif-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
-  --mono: 'JetBrains Mono', 'Courier New', monospace;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Courier New', monospace;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -190,7 +190,7 @@ header, section, footer, main { position: relative; z-index: 2; }
 
 .journal-title {
   font-family: var(--serif-display);
-  font-weight: 900;
+  font-weight: 800;
   font-size: clamp(44px, 8vw, 88px);
   line-height: 0.95;
   letter-spacing: 0;
@@ -304,6 +304,8 @@ header, section, footer, main { position: relative; z-index: 2; }
   max-width: 1180px;
   margin: 0 auto;
   padding: 50px 40px;
+  content-visibility: auto;
+  contain-intrinsic-size: 720px;
 }
 
 .section-header {
@@ -702,6 +704,8 @@ header, section, footer, main { position: relative; z-index: 2; }
   max-width: 1180px;
   margin: 80px auto 0;
   padding: 0 40px 60px;
+  content-visibility: auto;
+  contain-intrinsic-size: 520px;
 }
 
 .footer-rule {
@@ -900,6 +904,10 @@ header, section, footer, main { position: relative; z-index: 2; }
 }
 .article-back:hover { color: var(--accent); }
 
+.article-home-bottom {
+  margin: 36px 0 0;
+}
+
 .article-header {
   text-align: center;
   padding: 20px 0 40px;
@@ -1007,28 +1015,13 @@ header, section, footer, main { position: relative; z-index: 2; }
   font-variation-settings: "opsz" 72;
 }
 
-.article-body .pullquote {
-  font-family: var(--serif-display);
-  font-weight: 500;
-  font-style: italic;
-  font-size: 30px;
-  line-height: 1.2;
-  color: var(--accent);
-  text-align: center;
-  padding: 30px 40px;
-  margin: 2em 0;
-  border-top: 1px solid var(--ink-soft);
-  border-bottom: 1px solid var(--ink-soft);
-  font-variation-settings: "opsz" 144;
-}
-
 .article-figure {
   margin: 2em -40px;
   background: var(--paper-deep);
   padding: 30px;
   border: 1px solid var(--ink-soft);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   transform-style: preserve-3d;
   transition: border-color 0.35s ease, box-shadow 0.35s ease;
 }
@@ -1093,7 +1086,7 @@ header, section, footer, main { position: relative; z-index: 2; }
 }
 
 .article-figure.narrow img {
-  max-width: 360px;
+  max-width: 482px;
 }
 
 .article-figure.wide {

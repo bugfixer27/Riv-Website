@@ -1,18 +1,25 @@
 (() => {
   const root = document.documentElement;
   const body = document.body;
+  const supportsFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let pointerFrame = 0;
+  let lastPointerEvent;
 
   const setPointer = (event) => {
-    if (pointerFrame) cancelAnimationFrame(pointerFrame);
+    lastPointerEvent = event;
+    if (pointerFrame) return;
     pointerFrame = requestAnimationFrame(() => {
-      root.style.setProperty('--pointer-x', `${event.clientX}px`);
-      root.style.setProperty('--pointer-y', `${event.clientY}px`);
+      root.style.setProperty('--pointer-x', `${lastPointerEvent.clientX}px`);
+      root.style.setProperty('--pointer-y', `${lastPointerEvent.clientY}px`);
       body.classList.add('has-pointer');
+      pointerFrame = 0;
     });
   };
 
-  window.addEventListener('pointermove', setPointer, { passive: true });
+  if (supportsFinePointer && !prefersReducedMotion) {
+    window.addEventListener('pointermove', setPointer, { passive: true });
+  }
 
   const tiltTargets = document.querySelectorAll(
     '.feature-article, .article-card, .contributor-card, .mentor-card, .article-figure, .bio-placeholder'
@@ -20,6 +27,7 @@
 
   tiltTargets.forEach((target) => {
     target.classList.add('tilt-card');
+    if (!supportsFinePointer || prefersReducedMotion) return;
 
     target.addEventListener('pointermove', (event) => {
       const rect = target.getBoundingClientRect();
